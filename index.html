@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,25 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      .hero_top {
+        background: rgb(240,85,2);
+background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, rgba(240,2,2,1) 70%);
+        animation: gradient 10s ease infinite;
+        background-size: 400% 100%;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
   <body>
     <script
@@ -17,8 +36,22 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <section>
+    <section class="hero_top">
       <!-- hero section -->
+      <div class="px-4 py-5 text-center">
+
+        <h1 class="display-5 fw-bold text-body-emphasis">Mckenzie Morris</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead my-4 text-dark">
+            Software Engineer experienced in building full-stack JavaScript applications with React/Redux, Node, Express, and SQL & NoSQL databases. Contributor to open-source developer tool Chronos.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- resume section -->
+
     </section>
   </body>
 </html>
