@@ -11,11 +11,20 @@
       crossorigin="anonymous"
     />
     <style>
-      .hero_top {
+      .dope_color {
         background: rgb(240,85,2);
 background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, rgba(240,2,2,1) 70%);
         animation: gradient 10s ease infinite;
         background-size: 400% 100%;
+      }
+      .dope_text_color {
+        background: rgb(240,85,2);
+background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, rgba(240,2,2,1) 70%);
+        animation: gradient 10s ease infinite;
+        background-size: 400% 100%;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
       }
       @keyframes gradient {
         0% {
@@ -36,7 +45,7 @@ background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, r
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <section class="hero_top">
+    <section class="dope_color">
       <!-- hero section -->
       <div class="px-4 py-5 text-center">
 
@@ -51,7 +60,18 @@ background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, r
     </section>
     <section>
       <!-- resume section -->
+      <div class="container-fluid">
+        <div class="row row-cols-xl-2 row-cols-1 justify-content-center align-items-center">
+          <div class="col">
 
+              <h1 class="text-center dope_text_color">Paragraph</h1>
+
+          </div>
+          <div class="col my-5 text-center">
+            <object data="./Mckenzie Morris Resume.pdf" width="1000px" height="1000px"></object>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
