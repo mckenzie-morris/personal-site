@@ -10,34 +10,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      .dope_color {
-        background: rgb(240,85,2);
-background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, rgba(240,2,2,1) 70%);
-        animation: gradient 10s ease infinite;
-        background-size: 400% 100%;
-      }
-      .dope_text_color {
-        background: rgb(240,85,2);
-background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, rgba(240,2,2,1) 70%);
-        animation: gradient 10s ease infinite;
-        background-size: 400% 100%;
-        -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-      }
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" />
+
   </head>
   <body>
     <script
@@ -49,9 +23,9 @@ background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, r
       <!-- hero section -->
       <div class="px-4 py-5 text-center">
 
-        <h1 class="display-5 fw-bold text-body-emphasis">Mckenzie Morris</h1>
+        <h1 class="display-1 fw-bold text-body-emphasis">Mckenzie Morris</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead my-4 text-dark">
+          <p class="lead my-4 text-dark" style="font-size: x-large;">
             Software Engineer experienced in building full-stack JavaScript applications with React/Redux, Node, Express, and SQL & NoSQL databases. Contributor to open-source developer tool Chronos.
           </p>
           </div>
@@ -61,18 +35,37 @@ background: linear-gradient(45deg, rgba(240,85,2,1) 0%, rgba(245,163,0,1) 35%, r
     <section>
       <!-- resume section -->
       <div class="container-fluid">
-        <div class="row row-cols-xl-2 row-cols-1 justify-content-center align-items-center">
-          <div class="col">
-
-              <h1 class="text-center dope_text_color">Check Out My Resume!</h1>
-
+        <div class="row row-cols-md-2 row-cols-1 justify-content-center align-items-center">
+          <div class="col text-center">
+            <h1 class="display-2 dope_text_color fw-bold">My Experience & Education:</h1>
           </div>
-          <div class="col my-5 text-center">
-           
+          <div class="col my-5">
+            <ul class="dope_text_color" style="font-size: xx-large;">
+              <li>Chronos (Open-Source Development Tool)
+                <ul class="list-inline">
+                  <li class="list-inline-item">Contributed to open source developer tool that monitors health and web traffic for containerized (Docker & Kubernetes) and non-containerized microservices</li>
+                </ul>
+              </li>
+              <li>Codesmith Software Engineering Immersive Program
+                <ul class="list-inline">
+                  <li class="list-inline-item">Advanced Residency for Software Engineering</li>
+                </ul>
+              </li>
+              <li>Portland State University
+                <ul class="list-inline">
+                  <li class="list-inline-item">Relevant Coursework: Microprocessors, Digital Systems</li>
+                </ul>
+              </li>
+              <li>Portland Community College
+                <ul class="list-inline">
+                  <li class="list-inline-item">Relevant Coursework: Exploring Computer Science, C Programming, Engineering Programming</li>
+                </ul>
+              </li>
+            </ul> 
           </div>
         </div>
       </div>
     </section>
-    <hr class="dope_text_color">
+    <hr class="gradient-border">
   </body>
 </html>
