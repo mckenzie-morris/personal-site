@@ -64,3 +64,16 @@
     background-position: 0% 50%;
   }
 }
+
+.carousel_border {
+border-radius: 1%;
+background: rgb(240, 85, 2);
+background: linear-gradient(
+  45deg,
+  rgba(240, 85, 2, 1) 0%,
+  rgba(245, 163, 0, 1) 35%,
+  rgba(240, 2, 2, 1) 70%
+);
+animation: gradient 5s ease infinite;
+background-size: 400% 100%;
+}
